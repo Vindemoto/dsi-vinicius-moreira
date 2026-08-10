@@ -5,3 +5,5 @@ Programação Orientada a Objetos
 
 /* Comentários de mais
 de uma linha em Java */
+
+Classes começam com maiúsculas
