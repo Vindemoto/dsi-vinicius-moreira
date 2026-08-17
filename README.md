@@ -13,10 +13,10 @@ Classes começam com maiúsculas
 _______________________
 |     Calculadora     |
 ----------------------- 
-| Int soma;           | 
-| Int subtracao;      | } Atributos
-| Int multiplicacao;  | 
-| Float divisao       | 
+| Int soma;           |\
+| Int subtracao;      | } Atributos\
+| Int multiplicacao;  |\
+| Float divisao       |\
 -----------------------
 | soma();             |
 | subtrair();         | } Métodoa
