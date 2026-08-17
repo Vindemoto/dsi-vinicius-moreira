@@ -17,9 +17,9 @@ _______________________
 | Int subtracao;      | } Atributos\
 | Int multiplicacao;  |\
 | Float divisao       |\
------------------------
-| soma();             |
-| subtrair();         | } Métodoa
-| multiplicar();      |
-| dividir();          |
------------------------
+-----------------------\
+| soma();             |\
+| subtrair();         | } Métodos\
+| multiplicar();      |\
+| dividir();          |\
+-----------------------\
