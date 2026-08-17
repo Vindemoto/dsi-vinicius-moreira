@@ -9,7 +9,7 @@ de uma linha em Java */
 Classes começam com maiúsculas
 
   Modelagem de classe\
-      Nome classe\
+      Nome classe
 _______________________
 |     Calculadora     |
 ----------------------- 
