@@ -8,8 +8,8 @@ de uma linha em Java */
 
 Classes começam com maiúsculas
 
-  Modelagem de classe
-      Nome classe
+  Modelagem de classe\
+      Nome classe\
 _______________________
 |     Calculadora     |
 ----------------------- 
