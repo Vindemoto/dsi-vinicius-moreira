@@ -7,3 +7,19 @@ Programação Orientada a Objetos
 de uma linha em Java */
 
 Classes começam com maiúsculas
+
+  Modelagem de classe
+      Nome classe
+_______________________
+|     Calculadora     |
+----------------------- 
+| Int soma;           | 
+| Int subtracao;      | } Atributos
+| Int multiplicacao;  | 
+| Float divisao       | 
+-----------------------
+| soma();             |
+| subtrair();         | } Métodoa
+| multiplicar();      |
+| dividir();          |
+-----------------------
