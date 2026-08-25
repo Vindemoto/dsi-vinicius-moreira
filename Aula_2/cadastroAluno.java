@@ -15,11 +15,20 @@ public class cadAluno {
         this.telefone = telefone;
     }
     
-    public void verificarCadastro(){
+    public void exibirDados(){
         System.out.println("Nome: " + nome + 
                 "\nNascimento: " + dataNascimento +
                 "\nRA: " + RA +
                 "\nE-mail: " + email +
-                "\nTelefone: " + telefone);
+                "\nTelefone: " + telefone +
+                "\n------------------------------------");
+    }
+    
+    public void excluirDados(){
+        this.nome = "";
+        this.dataNascimento = "";
+        this.RA = 0;
+        this.email = "";
+        this.telefone = "";
     }
 }
