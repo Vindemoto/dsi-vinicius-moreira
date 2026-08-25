@@ -1,6 +1,6 @@
 package aula_3;
 
-public class opComp {
+public class opComparadores {
     
     public static void main(String[] args) {
         int A = 1, B = 8, C = 4, D = 5, E = 2;
