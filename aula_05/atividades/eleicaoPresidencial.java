@@ -1,45 +1,57 @@
-package grupopessoas;
+package eleicaopresidencial;
 import javax.swing.JOptionPane;
 
-public class GrupoPessoas {
+public class EleicaoPresidencial {
 
     public static void main(String[] args) {
-        
-        int contador = 0;
-        String continuar = "S";
+        int cand_um = 0;
+        int cand_dois = 0;
+        int cand_tres = 0;
+        int cand_quatro = 0;
+        int branco = 0;
+        int nulo = 0;
 
-        while (continuar.equalsIgnoreCase("S")) {
+        int voto;
 
-            String sexo = JOptionPane.showInputDialog(
-                "Digite o sexo (F/M):"
+        do {
+            voto = Integer.parseInt(
+                JOptionPane.showInputDialog(
+                    "[1] Candidato 1\n"
+                    + "[2] Candidato 2\n"
+                    + "[3] Candidato 3\n"
+                    + "[4] Candidato 4\n"
+                    + "[5] Branco\n"
+                    + "[6+] Nulo\n"
+                    + "[0] Encerrar\n\n"
+                    + "Digite seu voto:"
+                )
             );
 
-            int idade = Integer.parseInt(
-                JOptionPane.showInputDialog("Digite a idade:")
-            );
-
-            String estadoCivil = JOptionPane.showInputDialog(
-                "Digite o estado civil\n" +
-                    "[S] Solteira\n" +
-                    "[C] Casada"
-            );
-
-            if (sexo.equalsIgnoreCase("F")
-                    && idade < 21
-                    && estadoCivil.equalsIgnoreCase("S")) {
-
-                contador++;
+            if (voto == 1) {
+                cand_um++;
+            } else if (voto == 2) {
+                cand_dois++;
+            } else if (voto == 3) {
+                cand_tres++;
+            } else if (voto == 4) {
+                cand_quatro++;
+            } else if (voto == 5) {
+                branco++;
+            } else if (voto >= 6) {
+                nulo++;
             }
 
-            continuar = JOptionPane.showInputDialog(
-                "Deseja continuar? (S/N)"
-            );
-        }
+        } while (voto != 0);
 
         JOptionPane.showMessageDialog(
             null,
-            "Quantidade de mulheres solteiras com menos de 21 anos: "
-            + contador
+            "Resultado da votação:\n\n"
+            + "Candidato 1: " + cand_um + " votos\n"
+            + "Candidato 2: " + cand_dois + " votos\n"
+            + "Candidato 3: " + cand_tres + " votos\n"
+            + "Candidato 4: " + cand_quatro + " votos\n"
+            + "Brancos: " + branco + "\n"
+            + "Nulos: " + nulo
         );
     }
 }
